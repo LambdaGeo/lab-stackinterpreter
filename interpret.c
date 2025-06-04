@@ -11,4 +11,9 @@ void interpret (const char *source) {
     sscanf (source, "%s%s", op, arg);
     printf("operação: %s\n", op);
     printf("argumento: %s\n",  arg);
+    if (strcmp (op,"push") == 0){
+        printf ("empilhar %s\n", arg);
+    } else {
+        printf ("nao deu certo\n");
+    }
 }
